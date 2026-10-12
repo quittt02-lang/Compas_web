@@ -1,0 +1,21 @@
+let student = new Object();
+student.firstName = "Anna";
+student.lastName = "ivanova";
+student.age = "18";
+student.adress = new Object();
+student.adress.city = "Moscow";
+student.adress.street = "Lenina";
+student.age = "19";
+delete student.lastName;
+console.log(student.adress.city);
+console.log(Object.keys(student).length)
+
+function hasProperty(obj,propertyName){
+    for (let key in obj){
+        if (key === propertyName){
+           return true;
+        }
+    }
+    return false;
+}
+console.log(hasProperty(student, 'firstName'));
