@@ -19,3 +19,14 @@ function hasProperty(obj,propertyName){
     return false;
 }
 console.log(hasProperty(student, 'firstName'));
+if (student.age >= 14 && student.age <= 90){
+    console.log(true);
+} else{
+console.log(false);
+}
+
+if (student.age < 14 || student.age > 90){
+     console.log(true);
+ } else {
+ console.log(false);
+ }
